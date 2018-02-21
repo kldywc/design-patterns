@@ -1,0 +1,93 @@
+.container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.box{
+	width: 100%;
+
+}
+.Indigo{
+    background-color:#4B0082 ;
+}
+.DeepPink{
+    background-color:#FF1493 ;
+}
+.DeepSkyBlue{
+    background-color:#00BFFF ;
+
+}
+.Red{
+    background-color:#FF0000 ;
+}
+.Lime{
+	background-color: #00FF00;
+}
+.Green{
+    background-color: #008000;
+}
+.Orange{
+    background-color: #FF8C00;
+}
+@media screen and (min-width: 450px) {
+    .DeepPink,
+    .DeepSkyBlue{
+        width: 50%;
+    
+    }
+    .Lime,
+    .Green{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Indigo,
+    .DeepPink {
+        width: 50%;
+        text-align: center;
+        font-size: 1.6em;  /* Font style for this resoluton only */
+        font-weight: bold;
+        color: black;
+    }
+    .DeepSkyBlue,
+    .Red,
+    .Lime {
+        width: 33.33333%;
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: bold;
+        color: black;
+    }
+    
+        .Green{
+         width: 33.33%;
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: bold;
+        color: black;
+        }
+        .Orange{
+           width: 66.666%;
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: bold;
+        color: black;  
+
+        }
+        
+
+   }
+
+@media screen and (min-width: 900px){
+		.container{
+			width: 900px;
+			margin: auto;
+	
+		
+		}
+       
+}
+
+
