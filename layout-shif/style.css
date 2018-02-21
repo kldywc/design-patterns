@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 100%;
+}
+.AliceBlue{
+    background-color: #FF00FF;
+}
+.Aqua{
+    background-color: #00FFFF;
+}
+.Red{
+    background-color: #FF0000;
+
+}
+.Purple{
+    background-color: purple;
+}
+@media screen and (max-width: 599px){
+	.AliceBlue{
+		order: -1; 
+	}
+	.purple{
+		order: 1;     /*  goes to bottom */
+	}
+}
+
+@media screen and (min-width: 600px) {
+    .AliceBlue{
+        width: 50%;
+        order: -1;
+    }
+    .Purple{
+        width: 100%;
+        order: 1;
+    }
+    #container1 {
+        width: 50%;
+
+    }
+}
+
+/* We apply font styles to this resolution */
+@media screen and (min-width: 800px) {
+    .Purple {
+        width: 25%;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 1.6em;
+        order: 1; /* positive 1 layer goes last*/
+    }
+    #container1 {
+        width: 50%;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        font-size: 1.6em;
+    }
+    .AliceBlue{
+        width: 25%;
+        order: -1; /* Negative 1 layer goes first*/
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 1.6em;
+    }
+}
